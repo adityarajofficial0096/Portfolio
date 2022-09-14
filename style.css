@@ -346,3 +346,15 @@ h3 {
     width: 70%;
 };
 
+/* To Create the Traingle or Caret Symbol */
+
+.bio-progress-bar span::after {
+    content: "";
+    position: absolute;
+    top: -1.6rem;
+    width: 0rem;
+    height: 0rem;
+    border: 0.8rem solid var(--helper);
+    border-color: transparent;
+    border-bottom-color: var(--helper);
+};
