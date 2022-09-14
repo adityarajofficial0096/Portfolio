@@ -226,4 +226,17 @@ li {
 .mobile-nav-icon[name="close-outline"] {
     display: none;
 };
-  
+
+/* Sticky Navbar */
+.sticky .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 9rem;
+    width: 100%;
+    background-color: #b1adad;
+    box-shadow: 0 0 2rem 0 rgba(255, 251, 251, 0.1);
+    z-index: 100000;
+    padding-top: 0;
+    padding-bottom: 0;
+};
