@@ -373,3 +373,12 @@ h3 {
 .section-portfolio p, .section-services p {
     max-width: 60rem;
 };
+
+.p-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    margin-top: 6.4rem;
+    margin: 6.4rem 0;
+};
