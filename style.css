@@ -118,3 +118,15 @@ li {
     display: grid;
     gap: 9rem;
 }
+
+.grid-two-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-three-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-four-col {
+    grid-template-columns: repeat(4, 1fr);
+  }
