@@ -358,3 +358,18 @@ h3 {
     border-color: transparent;
     border-bottom-color: var(--helper);
 };
+
+
+/*---------------------------------------->
+<--        Section CSS Portfolio        -->
+<-----------------------------------------*/
+
+
+.section-portfolio {
+    background-color: var(--bg);
+    transition: all 0.7s linear;
+};
+
+.section-portfolio p, .section-services p {
+    max-width: 60rem;
+};
