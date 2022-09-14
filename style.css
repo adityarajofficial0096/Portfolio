@@ -472,3 +472,61 @@ h3 {
     color: var(--third);
     text-transform: capitalize;
 };
+
+
+/*---------------------------------------->
+<--       Services Offers Section       -->
+<-----------------------------------------*/
+
+
+.section-services {
+    transition: all 0.7s linear;
+};
+
+.section-services p {
+    max-width: 60rem;
+};
+
+.section-services .grid {
+    margin-top: 10rem;
+    row-gap: 10rem;
+};
+
+.service-box {
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: 6.4rem 3.4rem;
+    transition: all 0.2s linear;
+};
+
+.service-box:hover,
+.service-box:active {
+    transform: translateY(-3rem);
+};
+
+.serive-icon {
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--icons-bg);
+    display: inline-block;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--heading);
+    animation: water-wave 3s linear infinite;
+};
+
+.serive-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(11, 15, 20, 0.9);
+    width: 90%;
+    height: 90%;
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    background-color: transparent;
+    animation: water-wave 5s linear infinite alternate;
+};
