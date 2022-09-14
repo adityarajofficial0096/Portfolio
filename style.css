@@ -552,3 +552,85 @@ h3 {
     margin-top: 3rem;
     margin-bottom: 1rem;
 };
+
+/*---------------------------------------->
+<--           Resume Section            -->
+<-----------------------------------------*/
+
+
+.section-resume {
+    background: var(--bg);
+    transition: all 0.7s linear;
+};
+
+.resume-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+.resume-img img {
+    width: 80%;
+    box-shadow: -2rem 2rem 0 0 var(--helper);
+    /* box-shadow: var(--shadpw) */
+};
+
+.resume-para {
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    color: var(--heading);
+};
+
+.resume-data-subsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.8rem;
+    margin-top: 4.4rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid var(--para-tint);
+};
+
+.resume-data-left .grid {
+    gap: 1.5rem;
+};
+
+.resume-data-left .grid p,
+.resume-data-right p {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+};
+
+.resume-data-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+};
+
+.resume-data-right .resume-data-button {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--helper);
+    padding: 0.3rem 0;
+    min-width: 50%;
+    background: #f3f4ff;
+    border-radius: 10rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+};
+
+.resume-data-bottom-subsection {
+    margin-top: 4.8rem;
+};
+
+.resume-data-bottom-subsection .margin-small {
+    margin-top: 1.8rem;
+};
+
+.resume-data-bottom-subsection .resume-data-button {
+    width: 80%;
+};
