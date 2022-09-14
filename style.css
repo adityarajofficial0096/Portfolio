@@ -130,3 +130,48 @@ li {
   .grid-four-col {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  /*---------------------------------------->
+  <--         Header Section Start        -->
+  <-----------------------------------------*/
+
+  .header {
+    position: fixed;
+    padding: 40px 80px;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: -webkit-linear-gradient(
+                    0deg,
+                    rgb(132 144 255) 0%,
+                    rgb(98 189 252) 100%
+                    );
+    transition: 0.9s;
+    z-index: 1;
+  }
+  
+  .header .logo {
+    width: 9rem;
+    height: 9rem;
+  }
+  
+  .header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header ul li{
+    position: relative;
+    list-style: none;
+  }
+  
+  .header ul li a{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  
