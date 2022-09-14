@@ -240,3 +240,7 @@ li {
     padding-top: 0;
     padding-bottom: 0;
 };
+
+.sticky .section-hero {
+    margin-top: 10rem;
+};
