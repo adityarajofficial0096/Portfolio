@@ -244,3 +244,50 @@ li {
 .sticky .section-hero {
     margin-top: 10rem;
 };
+
+
+/*---------------------------------------->
+<--          Hero Section Start         -->
+<-----------------------------------------*/
+
+.bio-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+.bio-image img {
+    display: inline-block;
+    width: 80%;
+    box-shadow: -0rem -0rem 2rem 2rem var(--helper);
+};
+
+.common-heading {
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
+    text-transform: capitalize;
+    position: relative;
+};
+
+.common-heading::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--helper);
+};
+
+.common-heading::after {
+    content: "";
+    position: absolute;
+    top: 128%;
+    left: 1.5rem;
+    width: 30%;
+    height: 0.3rem;
+    background: var(--helper);
+};
+
