@@ -182,3 +182,42 @@ li {
     text-decoration: none;
     letter-spacing: 2px;
 };
+
+.navbar-lists {
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+};
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: all 0.3s;
+    font-family: "Poppins", sans-serif;
+};
+
+.navbar-link:hover,
+.navbar-link:active {
+    transition: all 1s;
+    color: #212529;
+    animation: fill 1s forwards;
+};
+
+.mobile-navbar-btn {
+    /* by default for normal screen we want to hide  */
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+};
+
+.mobile-nav-icon {
+    width: 5rem;
+    height: 5rem;
+    color: #212529;
+};
