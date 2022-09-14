@@ -23,7 +23,6 @@
 
 ;
 
-
 html {
     font-size: 62.5%;
     font-family: "Work Sans", sans-serif;
@@ -31,13 +30,11 @@ html {
 
 ;
 
-
 body {
     overflow-x: hidden;
 }
 
 ;
-
 
 h1,
 h2,
@@ -49,7 +46,6 @@ h4 {
 
 ;
 
-
 h1 {
     color: var(--heading);
     font-size: 6rem;
@@ -58,7 +54,6 @@ h1 {
 
 ;
 
-
 p {
     color: var(--para);
     line-height: 1.6;
@@ -66,7 +61,6 @@ p {
 }
 
 ;
-
 
 a {
     text-decoration: none;
@@ -99,43 +93,59 @@ li {
     position: relative;
 }
 
+;
+
 .btn:hover,
 .btn:active {
     box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 30%);
     color: rgb(255 255 255);
 }
 
+;
+
 .section {
     padding: 20rem 0;
 }
+
+;
 
 .container {
     max-width: 140rem;
     margin: 0 auto;
 }
 
+;
+
 .grid {
     display: grid;
     gap: 9rem;
 }
 
+;
+
 .grid-two-col {
     grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .grid-three-col {
+}
+
+;
+
+.grid-three-col {
     grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .grid-four-col {
+}
+
+;
+
+.grid-four-col {
     grid-template-columns: repeat(4, 1fr);
-  }
+}
 
-  /*---------------------------------------->
-  <--         Header Section Start        -->
-  <-----------------------------------------*/
+;
 
-  .header {
+/*---------------------------------------->
+<--         Header Section Start        -->
+<-----------------------------------------*/
+
+.header {
     position: fixed;
     padding: 40px 80px;
     height: 10rem;
@@ -143,35 +153,32 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: -webkit-linear-gradient(
-                    0deg,
-                    rgb(132 144 255) 0%,
-                    rgb(98 189 252) 100%
-                    );
+    background: -webkit-linear-gradient(0deg,
+            rgb(132 144 255) 0%,
+            rgb(98 189 252) 100%);
     transition: 0.9s;
     z-index: 1;
-  }
-  
-  .header .logo {
+};
+
+.header .logo {
     width: 9rem;
     height: 9rem;
-  }
-  
-  .header ul{
+}
+
+.header ul {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .header ul li{
+};
+
+.header ul li {
     position: relative;
     list-style: none;
-  }
-  
-  .header ul li a{
+};
+
+.header ul li a {
     position: relative;
     text-decoration: none;
     letter-spacing: 2px;
-  }
-  
+};
