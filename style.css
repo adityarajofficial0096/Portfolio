@@ -209,7 +209,7 @@ li {
 };
 
 .mobile-navbar-btn {
-    /* by default for normal screen we want to hide  */
+/* by default for normal screen we want to hide  */
     display: none;
     background: transparent;
     cursor: pointer;
@@ -221,3 +221,10 @@ li {
     height: 5rem;
     color: #212529;
 };
+
+/* for desktop or mobile menu-outline one must be visible and we need to hide the close menu icon */
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+};
+
+  
