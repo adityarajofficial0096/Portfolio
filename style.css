@@ -328,3 +328,21 @@ h3 {
             rgb(98 189 252) 100%);
     border-radius: 10rem;
 };
+
+
+.bio-progress-2::before {
+    width: 99%;
+};
+
+.bio-progress-3::before {
+    width: 90%;
+};
+
+.bio-progress-4::before {
+    width: 85%;
+};
+
+.bio-progress-5::before {
+    width: 70%;
+};
+
