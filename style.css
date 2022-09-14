@@ -222,9 +222,8 @@ li {
     color: #212529;
 };
 
-/* for desktop or mobile menu-outline one must be visible and we need to hide the close menu icon */
+/* For desktop or mobile menu-outline one must be visible and we need to hide the close menu icon */
 .mobile-nav-icon[name="close-outline"] {
     display: none;
 };
-
   
