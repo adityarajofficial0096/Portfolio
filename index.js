@@ -81,3 +81,47 @@ function myFunction(widthSize) {
 
 const widthSize = window.matchMedia("(max-width: 780px)");
 
+// Call Listener Function at Run Time
+myFunction(widthSize);
+// Attach Listener function on State Changes
+widthSize.addListener(myFunction);
+
+// ========================================
+//  Scroll to Top
+// ========================================
+const footerElm = document.querySelector(".section-footer");
+
+const scrollElement = document.createElement("div");
+scrollElement.classList.add("scrollTop-style");
+
+// I am Adding the Button Element inside the DIV Element
+scrollElement.innerHTML = ` <ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>`;
+
+// Add to the Bottom of the Page
+footerElm.after(scrollElement);
+
+// Deleting the DOM Element
+const scrollTop = () => {
+    sectionHero.scrollIntoView({ behavior: "smooth" });
+};
+
+document.querySelector(".scroll-top").addEventListener("click", scrollTop);
+
+// Get the Data Attributes
+
+/*--------------------------------------->
+<--          Smooth Scrolling          -->
+-----------------------------------------*/
+
+const portfolioSection = document.querySelector(".section-portfolio");
+const contactSection = document.querySelector(".section-contact");
+
+document.querySelector(".portfolio-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    portfolioSection.scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelector(".hireme-btn").addEventListener("click", (e) => {
+    e.preventDefault();
+    contactSection.scrollIntoView({ behavior: "smooth" });
+});
