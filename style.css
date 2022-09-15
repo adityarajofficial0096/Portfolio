@@ -6,8 +6,6 @@
     box-sizing: border-box;
 }
 
-;
-
 :root {
     --heading: rgb(0 10 45);
     --para: #777777;
@@ -21,14 +19,11 @@
     --shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
 }
 
-;
-
 html {
     font-size: 62.5%;
     font-family: "Work Sans", sans-serif;
 }
 
-;
 
 body {
     overflow-x: hidden;
@@ -44,7 +39,6 @@ h4 {
     font-family: "Poppins", sans-serif;
 }
 
-;
 
 h1 {
     color: var(--heading);
@@ -52,7 +46,6 @@ h1 {
     font-weight: 600;
 }
 
-;
 
 p {
     color: var(--para);
@@ -60,19 +53,16 @@ p {
     font-size: 1.8rem;
 }
 
-;
 
 a {
     text-decoration: none;
 }
 
-;
 
 li {
     list-style: none;
 }
 
-;
 
 .btn {
     background: -webkit-linear-gradient (0deg,
@@ -93,7 +83,6 @@ li {
     position: relative;
 }
 
-;
 
 .btn:hover,
 .btn:active {
@@ -101,45 +90,38 @@ li {
     color: rgb(255 255 255);
 }
 
-;
 
 .section {
     padding: 20rem 0;
 }
 
-;
 
 .container {
     max-width: 140rem;
     margin: 0 auto;
 }
 
-;
 
 .grid {
     display: grid;
     gap: 9rem;
 }
 
-;
 
 .grid-two-col {
     grid-template-columns: repeat(2, 1fr);
 }
 
-;
 
 .grid-three-col {
     grid-template-columns: repeat(3, 1fr);
 }
 
-;
 
 .grid-four-col {
     grid-template-columns: repeat(4, 1fr);
 }
 
-;
 
 /*---------------------------------------->
 <--         Header Section Start        -->
@@ -158,7 +140,8 @@ li {
             rgb(98 189 252) 100%);
     transition: 0.9s;
     z-index: 1;
-};
+}
+
 
 .header .logo {
     width: 9rem;
@@ -170,24 +153,28 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-};
+}
+
 
 .header ul li {
     position: relative;
     list-style: none;
-};
+}
+
 
 .header ul li a {
     position: relative;
     text-decoration: none;
     letter-spacing: 2px;
-};
+}
+
 
 .navbar-lists {
     display: flex;
     gap: 4.8rem;
     list-style: none;
-};
+}
+
 
 .navbar-link:link,
 .navbar-link:visited {
@@ -199,14 +186,16 @@ li {
     color: #ffffff;
     transition: all 0.3s;
     font-family: "Poppins", sans-serif;
-};
+}
+
 
 .navbar-link:hover,
 .navbar-link:active {
     transition: all 1s;
     color: #212529;
     animation: fill 1s forwards;
-};
+}
+
 
 .mobile-navbar-btn {
 /* by default for normal screen we want to hide  */
@@ -214,18 +203,21 @@ li {
     background: transparent;
     cursor: pointer;
     border: none;
-};
+}
+
 
 .mobile-nav-icon {
     width: 5rem;
     height: 5rem;
     color: #212529;
-};
+}
+
 
 /* For desktop or mobile menu-outline one must be visible and we need to hide the close menu icon */
 .mobile-nav-icon[name="close-outline"] {
     display: none;
-};
+}
+
 
 /* Sticky Navbar */
 .sticky .header {
@@ -239,11 +231,12 @@ li {
     z-index: 100000;
     padding-top: 0;
     padding-bottom: 0;
-};
+}
+
 
 .sticky .section-hero {
     margin-top: 10rem;
-};
+}
 
 
 /*---------------------------------------->
@@ -254,13 +247,15 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-};
+}
+
 
 .bio-image img {
     display: inline-block;
     width: 80%;
     box-shadow: -0rem -0rem 2rem 2rem var(--helper);
-};
+}
+
 
 .common-heading {
     font-size: 4.8rem;
@@ -268,7 +263,8 @@ li {
     margin-bottom: 6rem;
     text-transform: capitalize;
     position: relative;
-};
+}
+
 
 .common-heading::before {
     content: "";
@@ -279,7 +275,8 @@ li {
     height: 1.5rem;
     border-radius: 50%;
     background: var(--helper);
-};
+}
+
 
 .common-heading::after {
     content: "";
@@ -289,7 +286,8 @@ li {
     width: 30%;
     height: 0.3rem;
     background: var(--helper);
-};
+}
+
 
 
 .bio-data-stats {
@@ -297,13 +295,15 @@ li {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-};
+}
+
 
 h3 {
     font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 1rem;
-};
+}
+
 
 .bio-progress-bar {
     width: 90%;
@@ -314,7 +314,8 @@ h3 {
     position: relative;
     box-shadow: var(--shadpw);
     /* overflow: hidden; */
-};
+}
+
 
 .bio-progress-bar::before {
     content: "";
@@ -327,24 +328,28 @@ h3 {
             rgb(132 144 255) 0%,
             rgb(98 189 252) 100%);
     border-radius: 10rem;
-};
+}
 
 
 .bio-progress-2::before {
     width: 99%;
-};
+}
+
 
 .bio-progress-3::before {
     width: 90%;
-};
+}
+
 
 .bio-progress-4::before {
     width: 85%;
-};
+}
+
 
 .bio-progress-5::before {
     width: 70%;
-};
+}
+
 
 /* To Create the Traingle or Caret Symbol */
 
@@ -357,7 +362,7 @@ h3 {
     border: 0.8rem solid var(--helper);
     border-color: transparent;
     border-bottom-color: var(--helper);
-};
+}
 
 
 /*---------------------------------------->
@@ -368,11 +373,13 @@ h3 {
 .section-portfolio {
     background-color: var(--bg);
     transition: all 0.7s linear;
-};
+}
+
 
 .section-portfolio p, .section-services p {
     max-width: 60rem;
-};
+}
+
 
 .p-btns {
     display: flex;
@@ -381,29 +388,34 @@ h3 {
     gap: 3.2rem;
     margin-top: 6.4rem;
     margin: 6.4rem 0;
-};
+}
+
 
 .portfolio-images {
     gap: 3.2rem;
     margin-top: 6.4rem;
-};
+}
+
 
 .img-ovelay {
     position: relative;
     overflow: hidden;
-};
+}
+
 
 .portfolio-images img {
     width: 100%;
     border-radius: 7px;
     position: relative;
     overflow: hidden;
-};
+}
+
 
 .img-overlay {
     position: relative;
     overflow: hidden;
-};
+}
+
 
 .img-ovelay .overlay {
     position: absolute;
@@ -422,32 +434,36 @@ h3 {
     transition: all 0.3s linear;
     border-radius: 7px;
     /* box-shadow: inset 0 0 0 0.5rem var(--helper-tint); */
-};
+}
+
 
 .img-ovelay:hover>.overlay {
     opacity: 0.8;
     transform: translateY(0);
     cursor: pointer;
-};
+}
+
 
 .img-ovelay .overlay .common-heading {
     margin: 0;
     color: var(--third);
     text-decoration: none;
-};
+}
 
 
 .p-btn:hover {
     transform: translateY(-1rem);
-};
+}
+
 
 .p-btn-active {
     transform: translateY(-1rem);
-};
+}
+
 
 .p-image-not-active {
     display: none;
-};
+}
 
 
 /*---------------------------------------->
@@ -462,16 +478,18 @@ h3 {
     color: var(--third);
     text-align: center;
     transition: all 0.7s linear;
-};
+}
+
 
 .counter-numbers {
     font-size: 4.8rem;
-};
+}
+
 
 .section-work-data p {
     color: var(--third);
     text-transform: capitalize;
-};
+}
 
 
 /*---------------------------------------->
@@ -481,16 +499,19 @@ h3 {
 
 .section-services {
     transition: all 0.7s linear;
-};
+}
+
 
 .section-services p {
     max-width: 60rem;
-};
+}
+
 
 .section-services .grid {
     margin-top: 10rem;
     row-gap: 10rem;
-};
+}
+
 
 .service-box {
     text-align: center;
@@ -498,12 +519,14 @@ h3 {
     border-radius: 5px;
     padding: 6.4rem 3.4rem;
     transition: all 0.2s linear;
-};
+}
+
 
 .service-box:hover,
 .service-box:active {
     transform: translateY(-3rem);
-};
+}
+
 
 .serive-icon {
     width: 8rem;
@@ -515,7 +538,8 @@ h3 {
     position: relative;
     color: var(--heading);
     animation: water-wave 3s linear infinite;
-};
+}
+
 
 .serive-icon::after {
     content: "";
@@ -529,7 +553,7 @@ h3 {
     border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
     background-color: transparent;
     animation: water-wave 5s linear infinite alternate;
-};
+}
 
 
 @keyframes water-wave {
@@ -544,14 +568,15 @@ h3 {
     100% {
         border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
     }
-};
+}
 
 
 .service-box h3 {
     text-transform: capitalize;
     margin-top: 3rem;
     margin-bottom: 1rem;
-};
+}
+
 
 /*---------------------------------------->
 <--           Resume Section            -->
@@ -561,26 +586,30 @@ h3 {
 .section-resume {
     background: var(--bg);
     transition: all 0.7s linear;
-};
+}
+
 
 .resume-img {
     display: flex;
     justify-content: center;
     align-items: center;
-};
+}
+
 
 .resume-img img {
     width: 80%;
     box-shadow: -2rem 2rem 0 0 var(--helper);
     /* box-shadow: var(--shadpw) */
-};
+}
+
 
 .resume-para {
     font-size: 2.4rem;
     letter-spacing: 0;
     text-transform: capitalize;
     color: var(--heading);
-};
+}
+
 
 .resume-data-subsection {
     display: flex;
@@ -590,11 +619,13 @@ h3 {
     margin-top: 4.4rem;
     padding-bottom: 2.4rem;
     border-bottom: 1px solid var(--para-tint);
-};
+}
+
 
 .resume-data-left .grid {
     gap: 1.5rem;
-};
+}
+
 
 .resume-data-left .grid p,
 .resume-data-right p {
@@ -602,14 +633,16 @@ h3 {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-};
+}
+
 
 .resume-data-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-};
+}
+
 
 .resume-data-right .resume-data-button {
     font-size: 1.3rem;
@@ -621,19 +654,22 @@ h3 {
     border-radius: 10rem;
     justify-content: center;
     margin-bottom: 0.5rem;
-};
+}
+
 
 .resume-data-bottom-subsection {
     margin-top: 4.8rem;
-};
+}
+
 
 .resume-data-bottom-subsection .margin-small {
     margin-top: 1.8rem;
-};
+}
+
 
 .resume-data-bottom-subsection .resume-data-button {
     width: 80%;
-};
+}
 
 
 /*---------------------------------------->
@@ -645,7 +681,8 @@ h3 {
     width: 100%;
     height: 100%;
     margin-top: 9rem;
-};
+}
+
 
 .swiper-slide {
     text-align: center;
@@ -667,7 +704,8 @@ h3 {
     -webkit-align-items: center;
     align-items: center;
     margin-bottom: 5rem;
-};
+}
+
 
 .swiper-client-msg {
     padding: 5rem 8rem;
@@ -676,7 +714,8 @@ h3 {
     text-align: left;
     box-shadow: var(--shadpw);
     position: relative;
-};
+}
+
 
 .swiper-client-msg::before {
     content: "";
@@ -689,7 +728,8 @@ h3 {
     border: 5rem solid var(--third);
     border-color: transparent;
     border-top-color: var(--third);
-};
+}
+
 
 .swiper-client-msg p::before {
     content: "\f10d";
@@ -701,7 +741,8 @@ h3 {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     color: #ced3ff;
-};
+}
+
 
 .swiper-client-msg p::after {
     /* display: inline-block */
@@ -714,14 +755,16 @@ h3 {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     color: #ced3ff;
-};
+}
+
 
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-};
+}
+
 
 .swiper-client-data {
     align-items: center;
@@ -729,16 +772,18 @@ h3 {
     justify-content: start;
     gap: 1.4rem;
     margin-top: 3.2rem;
-};
+}
+
 
 .swiper-client-data img {
     max-width: 15rem;
     height: 15rem;
     border-radius: 50%;
     border: 0.5rem solid #ced3ff;
-};
+}
+
 
 .swiper-client-data p:first-child {
     font-weight: bold;
     color: var(--heading);
-};
+}
