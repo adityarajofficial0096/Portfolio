@@ -837,3 +837,49 @@ h3 {
     margin-bottom: 1.8rem;
 }
 
+
+/*----------------------------------------------------->
+<!--               Contact Us Section               --->
+<!-----------------------------------------------------*/
+
+
+.section-contact-main {
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+
+
+.section-contact-main form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.section-contact-main .grid {
+    gap: 2.4rem;
+}
+
+
+.section-contact-main input,
+textarea {
+    padding: 1.5rem 2rem;
+    border: 0.1rem solid #c9c9c9;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: "work sans";
+}
+
+
+.section-contact-main textarea {
+    height: 15rem;
+}
+
+
+.section-contact-main input[type="submit"] {
+    max-width: 30%;
+    border: none;
+}
+
