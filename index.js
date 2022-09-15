@@ -173,29 +173,6 @@ p_btns.addEventListener("click", (e) => {
 -------------------------------------------------------------*/
 
 
-const imgRef = document.querySelector("img[data-src]");
-console.log(imgRef);
-
-const lazyImg = (entries) => {
-    const [entry] = entries;
-    if (!entry.isIntersecting) return;
-    entry.target.src = imgRef.dataset.src;
-};
-
-const imgObserver = new IntersectionObserver(lazyImg, {
-    root: null,
-    threshold: 0,
-    // rootMargin: "100px",
-});
-
-imgObserver.observe(imgRef);
-
-
-/*------------------------------------------------------------>
-<--                 Aminated Counter Number                 -->
--------------------------------------------------------------*/
-
-
 const workSection = document.querySelector(".section-work-data");
 
 const workSectionObserve = (entries) => {
@@ -205,17 +182,17 @@ const workSectionObserve = (entries) => {
 
 
     const counterNum = document.querySelectorAll(".counter-numbers");
-    // Console.log(counterNum);
+    // console.log(counterNum);
     const speed = 200;
 
     counterNum.forEach((curNumber) => {
         const updateNumber = () => {
             const targetNumber = parseInt(curNumber.dataset.number);
-            // Console.log(targetNumber);
+            // console.log(targetNumber);
             const initialNumber = parseInt(curNumber.innerText);
-            // Console.log(initialNumber);
+            // console.log(initialNumber);
             const incrementNumber = Math.trunc(targetNumber / speed);
-            // I am Adding the Value to the Main Number
+            // I am Adding the value to the Main Number
             // console.log(incrementNumber);
 
             if (initialNumber < targetNumber) {
