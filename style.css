@@ -819,3 +819,21 @@ h3 {
 .section-freelancer .container {
     position: relative;
 }
+
+
+.section-freelancer h2 {
+    font-size: 5.4rem;
+}
+
+
+.section-freelancer h2 span {
+    color: #a0f669;
+}
+
+
+.section-freelancer h2,
+.section-freelancer p {
+    color: var(--third);
+    margin-bottom: 1.8rem;
+}
+
