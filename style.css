@@ -883,3 +883,18 @@ textarea {
     border: none;
 }
 
+
+/*----------------------------------------------------->
+<!--              Footer Section Start              --->
+<!----------------------------------------------------*/
+
+
+.section-footer {
+    background: var(--heading);
+}
+
+
+.section-footer h3 {
+    color: var(--third);
+    margin-bottom: 4rem;
+}
