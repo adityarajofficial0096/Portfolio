@@ -36,3 +36,8 @@ const observer = new IntersectionObserver(
     }
 );
 
+
+// When the Hero Section End Part Reached then We Need to Show the Sticky Navigation
+observer.observe(sectionHero);
+
+
