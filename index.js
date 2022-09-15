@@ -167,3 +167,25 @@ p_btns.addEventListener("click", (e) => {
     );
 });
 
+
+/*------------------------------------------------------------>
+<--             Lazy Loading Section JavaScript             -->
+-------------------------------------------------------------*/
+
+
+const imgRef = document.querySelector("img[data-src]");
+console.log(imgRef);
+
+const lazyImg = (entries) => {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+    entry.target.src = imgRef.dataset.src;
+};
+
+const imgObserver = new IntersectionObserver(lazyImg, {
+    root: null,
+    threshold: 0,
+    // rootMargin: "100px",
+});
+
+imgObserver.observe(imgRef);
