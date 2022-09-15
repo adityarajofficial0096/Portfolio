@@ -125,3 +125,45 @@ document.querySelector(".hireme-btn").addEventListener("click", (e) => {
     e.preventDefault();
     contactSection.scrollIntoView({ behavior: "smooth" });
 });
+
+
+/*------------------------------------------------------------>
+<--          Creating a Portfolio Tabbed Component          -->
+-------------------------------------------------------------*/
+
+
+const p_btns = document.querySelector(".p-btns");
+const p_btn = document.querySelectorAll(".p-btn");
+const p_img_elem = document.querySelectorAll(".img-ovelay");
+
+p_btns.addEventListener("click", (e) => {
+    // Console.log(e.target);
+
+    // We will Get which child Element was Clicked
+    const p_btn_clicked = e.target;
+    console.log(p_btn_clicked);
+
+    p_btn.forEach((curElem) => curElem.classList.remove("p-btn-active"));
+    // img_div.forEach((curElem) =>
+    //   curElem.classList.remove("portfolio-image-active")
+    // );
+
+    p_btn_clicked.classList.add("p-btn-active");
+
+    // To Find the p-img Class Number of the Images Using the btn data Attribute Number
+
+    const btn_num = p_btn_clicked.dataset.btnNum;
+    console.log(btn_num);
+
+    const img_active = document.querySelectorAll(`.p-btn--${btn_num}`);
+    // console.log(img_active);
+
+    p_img_elem.forEach((curElem) =>
+        curElem.classList.add("p-image-not-active")
+    );
+
+    img_active.forEach((curElem) =>
+        curElem.classList.remove(`p-image-not-active`)
+    );
+});
+
