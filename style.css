@@ -938,7 +938,6 @@ f-about p {
     text-align: center;
     color: #adadad;
 }
-
 .f-social-icons .icons {
     width: 4rem;
     height: 4rem;
@@ -961,3 +960,44 @@ f-about p {
 footer a:hover {
     color: var(--third);
 }
+
+/*----------------------------------------------------->
+<!--              Media Queries Section             --->
+<!----------------------------------------------------*/
+
+
+@media (max-width: 94em) {
+    .container {
+        max-width: 130rem;
+    }
+
+    .navbar-lists {
+        gap: 3.4rem;
+    }
+}
+
+
+/* For Widht Below 1200px  */
+@media (max-width: 75em) {
+    .container {
+        max-width: 110rem;
+    }
+
+    .navbar-lists {
+        gap: 3.4rem;
+    }
+}
+
+/* Media Queries Less Then 980px */
+@media (max-width: 980px) {
+
+    /* To Make all the Container with Same Padding */
+    .container {
+        padding: 0 3.2rem;
+    }
+
+    html {
+        font-size: 56.25%;
+    }
+
+    
