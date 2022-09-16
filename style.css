@@ -950,3 +950,14 @@ f-about p {
     animation: water-wave 3s linear infinite;
     color: var(--third);
 }
+
+
+.f-credits p {
+    text-align: center;
+    color: #adadad;
+}
+
+
+footer a:hover {
+    color: var(--third);
+}
