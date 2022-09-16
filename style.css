@@ -897,3 +897,56 @@ textarea {
     color: var(--third);
     margin-bottom: 4rem;
 }
+
+
+f-about p {
+    color: #adadad;
+}
+
+.f-links ul,
+.f-services ul,
+.f-address address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+    list-style: none;
+}
+
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a {
+    font-size: 1.8rem;
+    color: #adadad;
+    text-transform: capitalize;
+}
+
+.f-links span,
+.f-services span,
+.f-address span {
+    margin-right: 1rem;
+}
+
+.f-address p {
+    font-style: normal;
+    color: #adadad;
+}
+
+.f-social-icons {
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+}
+
+.f-social-icons .icons {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(144 172 209 / 20%);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--heading);
+    animation: water-wave 3s linear infinite;
+    color: var(--third);
+}
