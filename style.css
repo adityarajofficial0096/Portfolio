@@ -1061,3 +1061,45 @@ footer a:hover {
     .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
         display: none;
     }
+
+    /* Hero Section  */
+
+    .section-hero h1 {
+        line-height: 1.05;
+    }
+
+    /* Section Bidoata  */
+    .section-biodata .grid {
+        gap: 3rem;
+    }
+
+    /* Section Work  */
+    .section-work-data .common-numbers {
+        font-size: 3.2rem;
+    }
+
+    /* Services Section  */
+
+    .section-services .grid {
+        gap: 6rem;
+    }
+
+    .section-services .grid-three-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Resume Section  */
+    .section-resume .grid-two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .section-resume .grid-two-col img {
+        width: 50%;
+    }
+
+    .resume-img {
+        grid-row: 2;
+        transform: translateY(-2rem);
+    }
+
+    
