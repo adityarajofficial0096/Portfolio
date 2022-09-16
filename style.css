@@ -956,7 +956,6 @@ f-about p {
     color: #adadad;
 }
 
-
 footer a:hover {
     color: var(--third);
 }
@@ -1000,4 +999,65 @@ footer a:hover {
         font-size: 56.25%;
     }
 
-    
+
+    /* When We are in 980px We Need to Show the Menu Open Icon */
+    .mobile-navbar-btn {
+        display: block;
+        /* background-color: #212529; */
+        z-index: 99999;
+        border: 3px solid #212529;
+        color: #212529;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header .logo {
+        width: 40%;
+        /* height: 3.4rem; */
+    }
+
+    .navbar {
+        width: 100%;
+        height: 100vh;
+        background: #e7f5ff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .navbar-lists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-lists .navbar-link:link,
+    .navbar .navbar-lists .navbar-link:visited {
+        color: #212529;
+        font-size: 3.2rem;
+    }
+
+    .active .navbar {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+        z-index: 9999;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
