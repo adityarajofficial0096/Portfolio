@@ -1102,4 +1102,44 @@ footer a:hover {
         transform: translateY(-2rem);
     }
 
-    
+    /* testimonial section  */
+    .section-testimonial .grid-three-col {
+        grid-template-columns: 2fr;
+    }
+
+    .section-footer .grid-four-col {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Below 780px  */
+@media (max-width: 780px) {
+    .container {
+        max-width: 720px;
+    }
+
+    /* hero section  */
+    .section-hero .grid-two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero-data {
+        align-items: center;
+    }
+
+    .section-hero-data .hero-top-data {
+        /* align-self: flex-start; */
+    }
+
+    .hero-heading {
+        text-align: center;
+    }
+
+    .hero-para {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .section-hero img {
+        width: 70%;
+    }
