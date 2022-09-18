@@ -1143,3 +1143,9 @@ footer a:hover {
     .section-hero img {
         width: 70%;
     }
+
+    /* work section  */
+    .section-portfolio .grid-three-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
