@@ -1149,3 +1149,36 @@ footer a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+/* Below 560px  */
+@media (max-width: 35em) {
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .header .logo {
+        width: 60%;
+    }
+
+    /* secion .bio-data */
+
+    .section-biodata .grid-two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .section-biodata .bio-image {
+        grid-row: 2;
+        margin-top: 3.2rem;
+    }
+
+    /* work section  */
+    .section-work-data .grid-four-col {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* services section  */
+    .section-services .grid-three-col {
+        grid-template-columns: 1fr;
+    }
+}
