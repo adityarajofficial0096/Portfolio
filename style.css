@@ -980,7 +980,7 @@ f-about p {
 .f-links a,
 .f-services li,
 .f-services a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #adadad;
     text-transform: capitalize;
 }
@@ -992,6 +992,7 @@ f-about p {
 }
 
 .f-address p {
+    font-size: 1.4rem;
     font-style: normal;
     color: #adadad;
 }
