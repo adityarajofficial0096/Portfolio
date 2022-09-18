@@ -401,6 +401,23 @@ h3 {
 }
 
 
+/* To Create the Rectangle Box  */
+.bio-progress-bar span {
+    position: absolute;
+    top: 1.8rem;
+    left: 76%;
+    width: 4rem;
+    height: 2rem;
+    background: var(--helper);
+    color: var(--third);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+}
+
 /* To Create the Traingle or Caret Symbol */
 
 .bio-progress-bar span::after {
