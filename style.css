@@ -878,7 +878,7 @@ h3 {
 
 
 .section-freelancer {
-    background-image: url("../images/folio/3.jpg");
+    background-image: url("Images/folio/3.png");
     background-repeat: no-repeat;
     background-size: 100%;
     text-align: center;
@@ -894,7 +894,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #3e64ff;
+    background-color: #a5b2efa4;
     opacity: 0.7;
 }
 
