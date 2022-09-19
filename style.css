@@ -413,10 +413,31 @@ h3 {
     outline: none;
 }
 
+
+.bio-progress-bar span {
+    left: 76%;
+}
+
+.bio-progress-2 span {
+    left: 95%;
+}
+
+.bio-progress-3 span {
+    left: 86%;
+}
+
+.bio-progress-4 span {
+    left: 81%;
+}
+
+.bio-progress-5 span {
+    left: 66%;
+}
+
+
 /* To Create the Traingle or Caret Symbol */
 
-.bio-progress-bar span::after {
-    content: "";
+.bio-progress-bar span::after {    content: "";
     position: absolute;
     top: -1.6rem;
     width: 0rem;
