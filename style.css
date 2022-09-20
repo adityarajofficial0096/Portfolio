@@ -555,9 +555,12 @@ h3 {
 
 
 .section-work-data {
-    background: -webkit-linear-gradient(0deg,
-            rgb(132 144 255) 0%,
-            rgb(98 189 252) 100%);
+    background-image: url("Images/hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
     color: var(--third);
     text-align: center;
     transition: all 0.7s linear;
