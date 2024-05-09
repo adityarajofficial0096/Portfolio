@@ -113,10 +113,16 @@ document.querySelector(".scroll-top").addEventListener("click", scrollTop);
 <--          Smooth Scrolling          -->
 -----------------------------------------*/
 
+const heroSection = document.querySelector(".section-hero");
 const portfolioSection = document.querySelector(".section-portfolio");
 const contactSection = document.querySelector(".section-contact");
 const aboutSection = document.querySelector(".section-biodata");
 const servicesSection = document.querySelector(".section-services");
+
+document.querySelector(".hero-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    heroSection.scrollIntoView({ behavior: "smooth" });
+});
 
 document.querySelector(".portfolio-link").addEventListener("click", (e) => {
     e.preventDefault();
