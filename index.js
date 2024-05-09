@@ -115,6 +115,7 @@ document.querySelector(".scroll-top").addEventListener("click", scrollTop);
 
 const portfolioSection = document.querySelector(".section-portfolio");
 const contactSection = document.querySelector(".section-contact");
+const aboutSection = document.querySelector(".section-biodata");
 
 document.querySelector(".portfolio-link").addEventListener("click", (e) => {
     e.preventDefault();
@@ -126,6 +127,10 @@ document.querySelector(".hireme-btn").addEventListener("click", (e) => {
     contactSection.scrollIntoView({ behavior: "smooth" });
 });
 
+document.querySelector(".about-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+});
 
 /*------------------------------------------------------------>
 <--          Creating a Portfolio Tabbed Component          -->
