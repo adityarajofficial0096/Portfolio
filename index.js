@@ -132,6 +132,11 @@ document.querySelector(".about-link").addEventListener("click", (e) => {
     aboutSection.scrollIntoView({ behavior: "smooth" });
 });
 
+document.querySelector(".contact-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    contactSection.scrollIntoView({ behavior: "smooth" });
+});
+
 /*------------------------------------------------------------>
 <--          Creating a Portfolio Tabbed Component          -->
 -------------------------------------------------------------*/
