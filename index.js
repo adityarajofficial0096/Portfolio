@@ -116,6 +116,7 @@ document.querySelector(".scroll-top").addEventListener("click", scrollTop);
 const portfolioSection = document.querySelector(".section-portfolio");
 const contactSection = document.querySelector(".section-contact");
 const aboutSection = document.querySelector(".section-biodata");
+const servicesSection = document.querySelector(".section-services");
 
 document.querySelector(".portfolio-link").addEventListener("click", (e) => {
     e.preventDefault();
@@ -135,6 +136,11 @@ document.querySelector(".about-link").addEventListener("click", (e) => {
 document.querySelector(".contact-link").addEventListener("click", (e) => {
     e.preventDefault();
     contactSection.scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelector(".service-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    servicesSection.scrollIntoView({ behavior: "smooth" });
 });
 
 /*------------------------------------------------------------>
